@@ -1,0 +1,55 @@
+@charset 'UTF-8';
+//Variables
+// Color
+$pri-color:#313E6D;
+$sec-color:#9D8270;
+$border-color: #EEE;
+$link-color: #000;
+$dark-color: #000;
+$light-color: #FFF;
+
+// Font
+$pri-font:'System';
+html,
+body {
+    font-size: 14px;
+    font-family: System;
+}
+
+a {
+    color: $link-color;
+}
+
+.clearfloat {
+    &:after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+}
+
+// Heading
+
+// Font Face
+@font-face {
+    font-family: 'System';
+    font-style: normal;
+    font-weight: 400;
+    src: 
+    local(".SFNSText-Light"), 
+    local(".HelveticaNeueDeskInterface-Light"), 
+    local(".LucidaGrandeUI"), 
+    local("Ubuntu Light"), 
+    local("Segoe UI Light"), 
+    local("Roboto-Light"), 
+    local("DroidSans"), 
+    local("Tahoma");
+}
+
+// Import
+@import '_head';
+@import '_body';
+@import '_foot';
+@import '_custom';
+@import '_responsive';
+@import 'animate.css';

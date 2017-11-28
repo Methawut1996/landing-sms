@@ -1,0 +1,33 @@
+@charset 'UTF-8';
+
+/* Off Canvas Style */
+
+[off-canvas] {
+    background: $pri-color;
+    border-right: solid 1px $border-color;
+}
+
+
+/* Animation */
+
+.fade-in-up,
+.fade-in {
+    opacity: 0;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    opacity: 1;
+}
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    opacity: 1;
+}
+
+.fadeOut {
+    animation-name: fadeOutDown;
+    animation-duration: 1s;
+} 
+
