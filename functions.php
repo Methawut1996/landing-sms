@@ -126,7 +126,7 @@ function gds_scripts() {
 
 	//STYLE
 	wp_enqueue_style( 'gds-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.min.css' );
+	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/fontawesome-all.min.css' );
 	wp_enqueue_style( 'bulma', get_template_directory_uri() . '/assets/css/bulma.css' );
 	wp_enqueue_style( 'light-slider', get_template_directory_uri() . '/assets/vendor/light-slider/css/lightslider.min.css' );
 	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.css' );
