@@ -12,8 +12,7 @@ get_header();
         * Get Default Content
         */
     ?>
-
-    <?php get_template_part( 'template-parts/content'); ?>
+    <?php the_content(); ?>
 
 <?php endwhile; ?>
 

@@ -1,70 +1,35 @@
 @charset 'UTF-8';
 @media only screen and (max-width:767px) {}
 
-@media only screen and (min-width:767px) {}
+@media only screen and (min-width:767px) {
+    .container {
+        max-width: 1250px;
+        width: 1250px;
+    }
+}
 
 @media only screen and (min-width:768px) and (max-width:991px) {}
 
 @media only screen and (max-width:991px) {
 
-
-    /* Toggle Menu Button */
-
-    .mobile-bar {
-        background: $pri-color;
-        text-align: center;
-
-        &:after {
-            display: table;
-            content:'';
-            clear: both;
-        }
-    }
-    .toggle-menu {
-        display: inline-block;
-        border-radius: 5px;
-        padding: 5px 10px;
-        margin: 5px;
-        color: #FFF;
-        text-transform: uppercase;
-        
-        cursor: pointer;
-        i {
-            margin-right: 5px;
-        }
-        &:hover {
-            background: $pri-color;
-            color: #FFF;
-            border-color: transparent;
-        }
-    }
-
-    .mobile-menu {
-        display: none;
-        text-align: center;
-        background: $pri-color;
-        padding: 0 5vw 5vw;
-    
-        >li {
-            >a {
-                display: block;
-                padding: 10px;
-                color: #FFF;
-            }
-        }
-    }
-
 }
 
 @media only screen and (min-width:992px) {
 
-    /* Hide Mobile Bar Toggle Menu */
-    .toggle-menu,
-    .mobile-menu {
-        display: none;
-    }
 }
 
 @media only screen and (max-width:1199px) {}
 
 @media only screen and (min-width:1200px) {}
+@media only screen and (min-width : 768px) and (max-width : 1024px)  {
+    .container {
+        max-width: 691px;
+        width: 691px;
+    }
+}
+@media only screen and (min-width:1367px) {
+    .container {
+        max-width: 1344px;
+        width: 1344px;
+    }
+}

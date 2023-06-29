@@ -23,12 +23,3 @@
     </head>
 
     <body <?php body_class(); ?>>
-
-        <!-- Toggle Menu -->
-        <div class="toggle-menu" canvas=""><i class="fa fa-bars"></i><span>Menu</span></div>
-
-
-
-        <div id="page" class="site" canvas="container">
-
-            <div id="content" class="site-content">

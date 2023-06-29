@@ -1,5 +1,9 @@
+<!-- Post Item -->
 <article class="post-item">
-    <figure class="thumb"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('post-thumb', array('class'=>'img-responsive')); ?></a>
+    <figure class="thumbnail">
+        <a href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail('post-thumb'); ?>
+        </a>
         <figcaption>
             <?php the_category(' / '); ?>
         </figcaption>
@@ -17,5 +21,5 @@
             <?php the_excerpt(); ?>
         </div>
     </header>
-
 </article>
+<!-- Post Item -->

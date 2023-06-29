@@ -22,7 +22,7 @@ function gds_setup() {
 	 * If you're building a theme based on gds, use a find and replace
 	 * to change 'gds' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'goingdesign', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'goingstudio', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -126,14 +126,11 @@ function gds_scripts() {
 
 	//STYLE
 	wp_enqueue_style( 'gds-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/assets/css/fontawesome-all.min.css' );
-	wp_enqueue_style( 'bulma', get_template_directory_uri() . '/assets/css/bulma.css' );
-	wp_enqueue_style( 'light-slider', get_template_directory_uri() . '/assets/vendor/light-slider/css/lightslider.min.css' );
-	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.css' );
+	wp_enqueue_style( 'main-style', get_template_directory_uri() . '/assets/css/style.min.css' );
 
 	//SCRIPT
-	wp_enqueue_script(' jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js' );
-	wp_enqueue_script( 'light-slider', get_template_directory_uri() . '/assets/vendor/light-slider/js/lightslider.min.js');
+	wp_enqueue_script(' jquery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js' );
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js');
 	wp_enqueue_script( 'gds-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'gds-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'main-script', get_template_directory_uri() . '/assets/js/script.js');
@@ -164,15 +161,15 @@ require get_template_directory() . '/inc/jetpack.php';
 
 // For ACF Option
 
-if( function_exists('acf_add_options_page') ) {
+/* if( function_exists('acf_add_options_page') ) {
 	
 	acf_add_options_page();
 	
 }
-
+ */
 // For Woocommerce
 
-remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+/* remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
 add_action('woocommerce_before_main_content', 'gds_wrapper_start', 10);
@@ -191,3 +188,4 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
+ */

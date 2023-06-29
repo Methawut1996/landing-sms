@@ -5,6 +5,10 @@
 get_header();
 ?>
 
-    
+    <div class="container">
+        <div class="error-404">
+            <h2>Sorry, Not Found Anything Here.</h2>
+        </div>
+    </div>
 
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

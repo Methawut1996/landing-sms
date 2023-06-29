@@ -10,27 +10,21 @@
 get_header(); ?>
 
 
-    <div id="primary" class="content-area">
-        <main id="main" class="site-main">
-            <div class="post-display">
-                <div class="container">
-                    <div class="row">
-                        <?php
-		while ( have_posts() ) : the_post(); ?>
+    <div class="container">
+        <div class="post-display">
+            <div class="columns">
+                <?php
+while ( have_posts() ) : the_post(); ?>
 
-                            <div class="col-sm-4">
-                                <?php get_template_part( 'template-parts/content', 'category'); ?>
-                            </div>
-
-                            <?php endwhile; // End of the loop.
-		?>
+                    <div class="column is-4">
+                        <?php get_template_part( 'template-parts/content', 'category'); ?>
                     </div>
-                </div>
+
+                    <?php endwhile; // End of the loop.
+?>
             </div>
-        </main>
-        <!-- #main -->
+        </div>
     </div>
-    <!-- #primary -->
 
     <?php
 get_footer();

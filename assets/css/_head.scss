@@ -1,1 +1,19 @@
 @charset 'UTF-8';
+header{
+    .header-main{
+        display: flex;
+        justify-content: space-between;
+        .header-left{
+            display: flex;
+            align-items: center;
+            .icon-header{
+                width: 60px;
+            }
+        }
+        .header-right{
+    display: flex;
+    align-items: center;
+        }
+    }
+    
+}

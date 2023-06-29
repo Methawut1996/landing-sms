@@ -1,55 +1,39 @@
 @charset 'UTF-8';
 //Variables
 // Color
-$pri-color:#313E6D;
-$sec-color:#9D8270;
-$border-color: #EEE;
-$link-color: #000;
-$dark-color: #000;
-$light-color: #FFF;
+$color-pri: #044e8d;
+$color-sec: #666;
+$color-border: #eee;
+$color-link: #000;
 
 // Font
-$pri-font:'System';
+$font-pri: "Roboto";
+
 html,
 body {
-    font-size: 14px;
-    font-family: System;
+  font-size: 16px;
+  font-family: "Prompt", sans-serif;
 }
 
 a {
-    color: $link-color;
+  color: $color-link;
 }
 
 .clearfloat {
-    &:after {
-        display: table;
-        content: '';
-        clear: both;
-    }
-}
-
-// Heading
-
-// Font Face
-@font-face {
-    font-family: 'System';
-    font-style: normal;
-    font-weight: 400;
-    src: 
-    local(".SFNSText-Light"), 
-    local(".HelveticaNeueDeskInterface-Light"), 
-    local(".LucidaGrandeUI"), 
-    local("Ubuntu Light"), 
-    local("Segoe UI Light"), 
-    local("Roboto-Light"), 
-    local("DroidSans"), 
-    local("Tahoma");
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
 }
 
 // Import
-@import '_head';
-@import '_body';
-@import '_foot';
-@import '_custom';
-@import '_responsive';
-@import 'animate.css';
+@import "bootstrap.min.css";
+@import "all.min.css";
+@import "animate.css";
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800&display=swap");
+@import "_head";
+@import "_body";
+@import "_foot";
+@import "_custom";
+@import "_responsive";

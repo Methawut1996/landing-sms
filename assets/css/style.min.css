@@ -1,0 +1,94 @@
+@import "bootstrap.min.css";
+@import "all.min.css";
+@import "animate.css";
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800&display=swap");
+html,
+body {
+  font-size: 16px;
+  font-family: "Prompt", sans-serif;
+}
+
+a {
+  color: #000;
+}
+
+.clearfloat:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+header .header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .header-main .header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .header-main .header-left .icon-header {
+  width: 60px;
+}
+header .header-main .header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ul {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.thumb img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+body {
+  background-image: url(/assets/img/BG.png);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+@media only screen and (min-width: 767px) {
+  .container {
+    max-width: 1250px;
+    width: 1250px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 691px;
+    width: 691px;
+  }
+}
+@media only screen and (min-width: 1367px) {
+  .container {
+    max-width: 1344px;
+    width: 1344px;
+  }
+}
+/*# sourceMappingURL=style.min.css.map */

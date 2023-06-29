@@ -1,3 +1,30 @@
 @charset 'UTF-8';
 
-/* Home Slide */
+/////// Global-Class ///////
+ul {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+.thumb {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+body {
+  background-image: url(/assets/img/BG.png);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}

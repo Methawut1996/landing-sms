@@ -1,2 +1,65 @@
-@import url(animate.css);body,html{font-size:14px;font-family:System}a{color:#000}.clearfloat:after{display:table;content:'';clear:both}@font-face{font-family:'System';font-style:normal;font-weight:400;src:local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma")}[off-canvas]{background:#313E6D;border-right:solid 1px #EEE}.fade-in,.fade-in-up{opacity:0}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn;-webkit-animation-duration:1s;animation-duration:1s;opacity:1}.fadeInUp{-webkit-animation-name:fadeInUp;animation-name:fadeInUp;-webkit-animation-duration:1s;animation-duration:1s;opacity:1}.fadeOut{-webkit-animation-name:fadeOutDown;animation-name:fadeOutDown;-webkit-animation-duration:1s;animation-duration:1s}@media only screen and (max-width:991px){.mobile-bar{background:#313E6D;text-align:center}.mobile-bar:after{display:table;content:'';clear:both}.toggle-menu{display:inline-block;border-radius:5px;padding:5px 10px;margin:5px;color:#FFF;text-transform:uppercase;cursor:pointer}.toggle-menu i{margin-right:5px}.toggle-menu:hover{background:#313E6D;color:#FFF;border-color:transparent}.mobile-menu{display:none;text-align:center;background:#313E6D;padding:0 5vw 5vw}.mobile-menu>li>a{display:block;padding:10px;color:#FFF}}@media only screen and (min-width:992px){.mobile-menu,.toggle-menu{display:none}}
-/*# sourceMappingURL=style.css.map */
+@import url(bootstrap.min.css);
+@import url(all.min.css);
+@import url(animate.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
+html,
+body {
+  font-size: 16px;
+  font-family: "Roboto"; }
+
+a {
+  color: #000; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 2rem; }
+
+h4 {
+  font-size: 1.5rem; }
+
+h5 {
+  font-size: 1.3rem; }
+
+h6 {
+  font-size: 1rem; }
+
+.clearfloat:after {
+  display: table;
+  content: '';
+  clear: both; }
+
+ul {
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+figure {
+  margin: 0; }
+
+.thumb img {
+  width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none !important; }
+
+@media only screen and (min-width: 767px) {
+  .container {
+    max-width: 1250px;
+    width: 1250px; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 691px;
+    width: 691px; } }
+
+@media only screen and (min-width: 1367px) {
+  .container {
+    max-width: 1344px;
+    width: 1344px; } }
