@@ -18,6 +18,9 @@ a {
   clear: both;
 }
 
+header {
+  position: relative;
+}
 header .header-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,6 +28,14 @@ header .header-main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.94);
 }
 header .header-main .header-left {
   display: -webkit-box;
@@ -37,6 +48,9 @@ header .header-main .header-left {
 header .header-main .header-left .icon-header {
   width: 60px;
 }
+header .header-main .header-left p {
+  margin: 0 0.5rem;
+}
 header .header-main .header-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,6 +58,10 @@ header .header-main .header-right {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+header .header-main .header-right a {
+  margin: 0 5px;
+  color: #3173BF;
 }
 
 ul {
@@ -68,9 +86,18 @@ a {
 }
 
 body {
-  background-image: url(/assets/img/BG.png);
+  background-image: url(../img/BG.png);
   background-attachment: fixed;
   background-size: 100% 100%;
+}
+
+.content-banner {
+  margin: 5rem 0;
+  overflow: hidden;
+}
+
+.test {
+  height: 500px;
 }
 
 @media only screen and (min-width: 767px) {

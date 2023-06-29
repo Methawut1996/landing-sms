@@ -24,7 +24,14 @@ a {
   text-decoration: none !important;
 }
 body {
-  background-image: url(/assets/img/BG.png);
+  background-image: url(../img/BG.png);
   background-attachment: fixed;
   background-size: 100% 100%;
+}
+.content-banner{
+  margin: 5rem 0;
+  overflow: hidden;
+}
+.test{
+  height: 500px;
 }
