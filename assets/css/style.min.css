@@ -60,7 +60,7 @@ header .header-main .header-right {
           align-items: center;
 }
 header .header-main .header-right a {
-  margin: 0 5px;
+  margin: 0 10px;
   color: #3173BF;
 }
 
@@ -91,13 +91,119 @@ body {
   background-size: 100% 100%;
 }
 
+.style-header {
+  color: #084386;
+}
+
+.style-color-text {
+  color: #3173bf;
+}
+
 .content-banner {
-  margin: 5rem 0;
+  margin: 5.5rem 0 2rem;
   overflow: hidden;
 }
 
 .test {
   height: 500px;
+}
+
+.package-main .content-package {
+  text-align: center;
+}
+.package-main .card-section-package .row {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+}
+.package-main .card-section-package .row .card-width-package {
+  width: 25%;
+  margin: 0 0.5rem;
+}
+.package-main .card-section-package .row .card-width-package .card-content-package {
+  background-color: white;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.package-main .card-section-package .row .card-width-package .card-content-package .package-head {
+  font-weight: 700;
+  font-size: 18px;
+}
+.package-main .card-section-package .row .card-width-package .card-content-package .price-package {
+  font-size: 28px;
+  font-weight: 700;
+}
+.package-main .card-section-package .row .card-width-package .card-content-package .package-list-promotion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.25rem 0;
+}
+.package-main .card-section-package .row .card-width-package .card-content-package .package-list-promotion img {
+  width: 20px;
+  margin-right: 12px;
+}
+.package-main .card-section-package .row .card-width-package .card-content-package .button-buy-package {
+  background-color: #3275a5;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+  padding: 0.25rem;
+  width: 150px;
+}
+.package-main .popular-package {
+  padding: 0 0rem 1.5rem !important;
+  border: 2px solid #0085E4;
+}
+.package-main .popular-package .package-interesting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+  background-color: #0085E4;
+  border-radius: 4px 4px 0 0;
+  padding: 0.5rem;
+}
+.package-main .popular-package .package-interesting img {
+  margin: 0 0.5rem;
+  width: 30px;
+}
+.package-main .popular-package .package-interesting p {
+  color: white;
+  font-weight: 500;
+}
+.package-main .popular-package .card-content-popular {
+  padding: 0 1.5rem;
+}
+
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
+.promotion-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.promotion-main .container {
+  overflow: hidden;
+}
+footer {
+  background-color: rgba(74, 93, 95, 0.8823529412);
+}
+footer p {
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
 }
 
 @media only screen and (min-width: 767px) {

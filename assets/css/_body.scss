@@ -28,10 +28,106 @@ body {
   background-attachment: fixed;
   background-size: 100% 100%;
 }
-.content-banner{
-  margin: 5rem 0;
+.style-header {
+  color: #084386;
+}
+.style-color-text {
+  color: #3173bf;
+}
+.content-banner {
+  margin: 5.5rem 0 2rem;
   overflow: hidden;
 }
-.test{
+.test {
   height: 500px;
+}
+.package-main {
+  .content-package {
+    text-align: center;
+  }
+  
+  .card-section-package {
+    .row {
+      flex-wrap: nowrap;
+      overflow: hidden;
+      overflow-x: auto;
+     .card-width-package{
+      width: 25%;
+      margin: 0 0.5rem;
+      .card-content-package {
+        background-color: white;
+        margin: 2rem 0;
+        padding: 1.5rem;
+        border-radius: 10px;
+
+        .package-head {
+          font-weight: 700;
+          font-size: 18px;
+        }
+        .price-package {
+          font-size: 28px;
+          font-weight: 700;
+        }
+        .package-list-promotion {
+          display: flex;
+          margin: 0.25rem 0;
+          img {
+            width: 20px;
+            margin-right: 12px;
+          }
+        }
+        .button-buy-package {
+          background-color: #3275a5;
+          color: white;
+          border-radius: 10px;
+          margin: auto;
+          padding: 0.25rem;
+          width: 150px;
+        }
+      }
+     }
+      
+    }
+  }
+  .popular-package{
+    padding: 0 0rem 1.5rem !important;
+    border: 2px solid #0085E4;
+
+    .package-interesting{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+    margin-bottom: 0.5rem;
+    background-color: #0085E4;
+    border-radius:4px 4px 0 0 ;
+    padding: 0.5rem;
+    img{
+      margin: 0 0.5rem;
+      width: 30px;
+    }
+    p{
+      color: white;
+      font-weight: 500;
+    }
+    }
+    .card-content-popular{
+      padding: 0 1.5rem;
+    }
+  }
+}
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
+.promotion-main{
+  display: flex;
+  .container{
+    overflow: hidden;
+    .content-promotion{
+      // display: flex;
+      // width: 25%;
+    }
+  }
+
 }
