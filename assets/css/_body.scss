@@ -38,22 +38,19 @@ body {
   margin: 5.5rem 0 2rem;
   overflow: hidden;
 }
-.test {
-  height: 500px;
-}
+
 .package-main {
   .content-package {
     text-align: center;
   }
   
   .card-section-package {
-    .row {
-      flex-wrap: nowrap;
+      // flex-wrap: nowrap;
       overflow: hidden;
-      overflow-x: auto;
+      
      .card-width-package{
-      width: 25%;
-      margin: 0 0.5rem;
+      // width: 25%;
+      // margin: 0 0.5rem;
       .card-content-package {
         background-color: white;
         margin: 2rem 0;
@@ -87,7 +84,7 @@ body {
       }
      }
       
-    }
+    
   }
   .popular-package{
     padding: 0 0rem 1.5rem !important;
@@ -121,6 +118,7 @@ body {
 }
 
 .promotion-main{
+  margin: 2rem;
   display: flex;
   .container{
     overflow: hidden;
@@ -129,5 +127,12 @@ body {
       // width: 25%;
     }
   }
-
+}
+.example-main{
+  background-color: rgba(255, 255, 255, 0.521);
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.menu-content{
+  display: none;
 }
