@@ -132,7 +132,8 @@ body {
   background-color: rgba(255, 255, 255, 0.521);
   text-align: center;
   padding: 1.5rem 0;
+  .swiper-example{
+    overflow: hidden;
+  }
 }
-.menu-content{
-  display: none;
-}
+
