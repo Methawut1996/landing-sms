@@ -64,6 +64,35 @@ header .header-main .header-right a {
   color: #3173BF;
 }
 
+.menu-mobile {
+  display: none;
+}
+.menu-mobile img {
+  width: 25px;
+}
+
+.popup {
+  position: relative;
+}
+.popup .socail-popup {
+  width: 50px;
+  position: fixed;
+  z-index: 9;
+  right: 15px;
+  top: 50;
+}
+.popup .socail-popup img {
+  margin: 5px 0px;
+}
+.popup .back-to-top {
+  width: 50px;
+  position: fixed;
+  z-index: 9;
+  right: 15px;
+  bottom: 50px;
+  cursor: pointer;
+}
+
 ul {
   margin: 0;
 }
@@ -381,22 +410,125 @@ h5 {
           transform: translate3d(-50%, 0, 0);
 }
 
-@media only screen and (min-width: 767px) {
-  .container {
-    max-width: 1250px;
-    width: 1250px;
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .content-package h1 {
+    font-size: 1.7rem;
+  }
+  .content-package p {
+    font-size: 12px;
+  }
+  .content-package .card-content-package {
+    margin: 1rem 0 !important;
+  }
+  .content-package .package-list-promotion img {
+    width: 18px !important;
+    margin-right: 10px !important;
+  }
+  .content-package .package-interesting img {
+    width: 20px !important;
+  }
+  .content-package .card-content-popular .package-head {
+    font-size: 16px !important;
+  }
+  .content-package .price-package {
+    font-size: 23px !important;
+  }
+  .content-package .button-buy-package {
+    font-size: 14px;
+    width: 120px !important;
+  }
+  .popup .socail-popup {
+    width: 45px;
+  }
+  .popup .back-to-top {
+    width: 45px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    max-width: 691px;
-    width: 691px;
+@media only screen and (max-width: 600px) {
+  .header-main {
+    padding: 0.5rem 0.25rem !important;
   }
-}
-@media only screen and (min-width: 1367px) {
-  .container {
-    max-width: 1344px;
-    width: 1344px;
+  .header-main .header-right {
+    display: none !important;
+  }
+  .header-main .header-left .icon-header {
+    width: 45px !important;
+  }
+  .header-main .header-left p {
+    margin: 0 0.25rem !important;
+    font-size: 10px;
+  }
+  .header-main .menu-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .popup .socail-popup {
+    width: 35px;
+    right: 5px;
+  }
+  .popup .back-to-top {
+    display: none;
+  }
+  .content-banner {
+    margin: 4.5rem 0 1.2rem;
+  }
+  .package-main .content-package h1 {
+    font-size: 15px;
+  }
+  .package-main .content-package .package-head-title {
+    display: none;
+  }
+  .package-main .content-package P {
+    font-size: 10px;
+  }
+  .package-main .popular-package {
+    padding: 0 0rem 0.75rem !important;
+  }
+  .card-content-package {
+    padding: 0.75rem !important;
+    margin: 0.5rem 0 !important;
+  }
+  .card-content-package hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .card-content-package .package-interesting {
+    padding: 0.3rem !important;
+  }
+  .card-content-package .package-interesting img {
+    width: 16px !important;
+  }
+  .card-content-package .package-interesting p {
+    font-size: 10px;
+  }
+  .card-content-package .card-content-popular {
+    padding: 0 0.5rem !important;
+  }
+  .card-content-package .package-head {
+    font-size: 13px !important;
+  }
+  .card-content-package .price-package {
+    font-size: 18px !important;
+  }
+  .card-content-package .package-list-promotion img {
+    margin-right: 5px !important;
+  }
+  .card-content-package .package-list-promotion p {
+    font-size: 10px;
+  }
+  .card-content-package .button-buy-package {
+    font-size: 12px;
+    width: 90px !important;
+  }
+  .promotion-main {
+    margin: 1rem;
+  }
+  footer p {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */

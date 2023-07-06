@@ -18,11 +18,13 @@ header {
         .header-left {
             display: flex;
             align-items: center;
+
             .icon-header {
                 width: 60px;
             }
-            p{
-                margin: 0 0.5rem ;
+
+            p {
+                margin: 0 0.5rem;
             }
         }
 
@@ -37,4 +39,32 @@ header {
         }
     }
 
+}
+.menu-mobile{
+    display: none;
+    img{
+        width: 25px;
+    }
+}
+
+.popup {
+    position: relative;
+    .socail-popup{
+        width: 50px;
+        position: fixed;
+        z-index: 9;
+        right: 15px;
+        top: 50;
+        img{
+            margin: 5px 0px;
+        }
+    }
+    .back-to-top {
+        width: 50px;
+        position: fixed;
+        z-index: 9;
+        right: 15px;
+        bottom: 50px;
+        cursor: pointer;
+    }
 }
