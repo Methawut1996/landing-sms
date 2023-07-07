@@ -32,47 +32,51 @@
           <a href="#example" class="scrollTo">ตัวอย่างข้อความ</a>
           <a href="#promotion" class="scrollTo">โปรโมชั่น</a>
         </div>
-        <div class="menu-mobile">
+        
+
+      <div class="dropdown">
+        <div class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="assets/img/icon/menu-mb.png" alt="">
         </div>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item scrollTo" href="#package"><img src="assets/img/icon/email.png" alt="">แพ็กเกจ</a>
+          <a class="dropdown-item scrollTo" href="#example"><img src="assets/img/icon/sms.png" alt="">ตัวอย่างข้อความ</a>
+          <a class="dropdown-item scrollTo" href="#promotion"><img src="assets/img/icon/promoting.png" alt="">โปรโมชั่น</a>
+          <a class="dropdown-item scrollTo" href="#"><img src="assets/img/icon/headphones.png" alt="">ติดต่อเรา</a>
+        </div>
       </div>
-    </div>
 
-    
-    <div class="popup">
-      <div class="socail-popup">
-        <a href=""><figure class="thumb">
-          <img src="assets/img/icon/line-popup.png" alt="">
-        </figure></a>
-        <a href=""><figure class="thumb">
-          <img src="assets/img/icon/telegram.png" alt="">
-        </figure></a>
       </div>
-      
-      <div class="back-to-top"  id="button">
-        <figure class="thumb">
-          <img src="assets/img/icon/backtotop.png" alt="">
-        </figure>
+
+
+      <div class="popup">
+        <div class="socail-popup">
+          <a href="">
+            <figure class="thumb">
+              <img src="assets/img/icon/line-popup.png" alt="">
+            </figure>
+          </a>
+          <a href="">
+            <figure class="thumb">
+              <img src="assets/img/icon/telegram.png" alt="">
+            </figure>
+          </a>
+        </div>
+
+        <div class="back-to-top" id="button">
+          <figure class="thumb">
+            <img src="assets/img/icon/backtotop.png" alt="">
+          </figure>
+        </div>
       </div>
-    </div>
-    <!-- Nav-Mobile -->
-<!-- <div class="nav-mobile-box">
-  <div class="mobile-wrap-menu">
-      <ul class="menu-mobile-item">
-          <li><a href="">หน้าแรก</a></li>
-          <li><a href="">โปรโมชั่น</a></li>
-          <li><a href="">คู่มือ</a></li>
-      </ul>
-  </div>
-</div> -->
+
   </header>
 
   <div class="content-banner">
     <div class="container">
 
-      <div class="swiper my-Swiper">
+      <div class="my-Swiper">
         <div class="swiper-wrapper">
-
           <div class="swiper-slide">
             <div class="banner-img">
               <figure class="thumb"><img src="assets/img/banner.png" alt=""></figure>
@@ -99,7 +103,8 @@
     <div class="container">
       <div class="content-package">
         <h1 class="style-header">เรามีแพ็กเกจส่ง SMS ออนไลน์ ใช้งานง่าย คุณภาพสูง</h1>
-        <p class="package-head-title">จัดเต็มด้วย Feature ที่ตอบสนองความต้องการระดับธุรกิจ พร้อมรายงานเชิงลึกต่างๆ ที่จำเป็นสำหรับการตลาดผ่าน SMS
+        <p class="package-head-title">จัดเต็มด้วย Feature ที่ตอบสนองความต้องการระดับธุรกิจ พร้อมรายงานเชิงลึกต่างๆ
+          ที่จำเป็นสำหรับการตลาดผ่าน SMS
         </p>
         <div class="card-section-package">
           <div class="swiper-package">
@@ -134,6 +139,7 @@
 
                 </div>
               </div>
+
               <div class="card-width-package swiper-slide">
                 <div class="card-content-package">
                   <p class="package-head style-color-text">Standard Pack A</p>
@@ -237,61 +243,136 @@
     </div>
   </div>
 
-  <!-- <div class="example-main">
+  <div class="example-main" id="example">
     <div class="container">
       <div class="head-example">
         <h2>ตัวอย่างข้อความการประยุกต์ใช้</h2>
         <h2 class="style-header">SMS เพื่อยกระดับธุรกิจของคุณ</h2>
       </div>
       <div class="wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <div class="slider slider-nav d-flex flex-column">
-                <div>
-                  <h5 class="tabs"><span slide="slide_1">Productivity</span></h6>
+        <div class="item-pc">
+
+          <div class="slider-wrapper-main">
+            <div class="pagi-custom-wrap">
+              <div class="item-pagi"></div>
+              <div class="item-pagi"></div>
+              <div class="item-pagi"></div>
+              <div class="item-pagi"></div>
+              <div class="item-pagi"></div>
+              <div class="item-pagi"></div>
+              <div class="item-pagi"></div>
+            </div>
+            <div class="flex-slide-wrapp w-100 d-flex flex-wrap align-items-center justify-content-between">
+              <div class="item-caption-slide text-left">
+                <div class="title-blog-flex">
+                  <p class="title-slide slide1">SMS สำหรับข้อเสนอพิเศษ</p>
+                  <p class="title-slide slide2">SMS สำหรับข่าวล่าสุด</p>
+                  <p class="title-slide slide3">SMS สำหรับข้อเสนอสินเชื่อส่วนบุคคล</p>
+                  <p class="title-slide slide4">SMS เพื่อการศึกษา</p>
+                  <p class="title-slide slide5">SMS เพื่อส่งการแจ้งเตือน</p>
+                  <p class="title-slide slide6">SMS สำหรับคำอวยพรวันเกิด</p>
+                  <p class="title-slide slide7">SMS สำหรับการแจ้งเตือนด้านการรักษาพยาบาล</p>
                 </div>
-                <div>
-                  <h5 class="tabs"><span slide="slide_2">Visual</span></h6>
-                </div>
-                <div>
-                  <h5 class="tabs"><span slide="slide_3">Service</span></h6>
-                </div>
-                <div>
-                  <h5 class="tabs"><span slide="slide_4">Safety</span></h6>
-                </div>
-                <div>
-                  <h5 class="tabs"><span slide="slide_5">Dynamic</span></h6>
-                </div>
-                <div>
-                  <h5 class="tabs"><span slide="slide_6">Status</span></h6>
-                </div>
-                <div>
-                  <h5 class="tabs"><span slide="slide_7">Adjustable</span></h6>
-                </div>
-                <div>
-                  <h5 class="tabs"><span slide="slide_8">Customizable</span></h6>
+              </div>
+              <div class="item-slide-swiper " style="overflow: hidden;">
+                <div class="swiper-tel">
+                  <div class="swiper-container">
+                    <div class="swiper">
+                      <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                          <div class="image-wrap">
+                            <img class="" src="assets/img/package1.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-wrap">
+                            <img class="" src="assets/img/package1.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-wrap">
+                            <img class="" src="assets/img/package1.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-wrap">
+                            <img class="" src="assets/img/package1.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-wrap">
+                            <img class="" src="assets/img/package1.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-wrap">
+                            <img class="" src="assets/img/package1.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-wrap">
+                            <img class="" src="assets/img/package1.png" alt="" />
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="image-wrap">
+                            <img class="" src="assets/img/package1.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-7 ">
-              <div class="slider slider-single slider__item rev_slider">
-                <div data-index="1" class="rev_slider"><img src="assets/img/package1.png" alt="One"></div>
-                <div data-index="2" class="rev_slider"><img src="assets/img/package1.png" alt="Two"></div>
-                <div data-index="3" class="rev_slider"><img src="assets/img/package1.png" alt="Three"></div>
-                <div data-index="4" class="rev_slider"><img src="assets/img/package1.png" alt="Four"></div>
-                <div data-index="5" class="rev_slider"><img src="assets/img/package1.png" alt="Five"></div>
-                <div data-index="6" class="rev_slider"><img src="assets/img/package1.png" alt="Six"></div>
-                <div data-index="7" class="rev_slider"><img src="assets/img/package1.png" alt="Seven"></div>
-                <div data-index="8" class="rev_slider"><img src="assets/img/package1.png" alt="Eight"></div>
+          </div>
+        </div>
+        <div class="item-mobile" style="overflow: hidden;">
+          <div class="slide-exam-mobile" style="margin: 1.5rem 0 0rem;">
+            <div class="swiper-exam">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="" src="assets/img/package1.png" alt="" />
+                  <div class="caption-slide-wrapper">
+                    <p>SMS สำหรับข้อเสนอพิเศษ</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img class="" src="assets/img/package1.png" alt="" />
+                  <div class="caption-slide-wrapper">
+                    <p>SMS สำหรับข่าวล่าสุด</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img class="" src="assets/img/package1.png" alt="" />
+                  <div class="caption-slide-wrapper">
+                    <p>SMS สำหรับข้อเสนอสินเชื่อส่วนบุคคล</p>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <img class="" src="assets/img/package1.png" alt="" />
+                  <div class="caption-slide-wrapper">
+                    <p>SMS เพื่อการศึกษา</p>
+                  </div>
+                </div>
+
               </div>
+              <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <div class="pagi-custom-wrap-mobile">
+              <div class="item-pagi-mobile"></div>
+              <div class="item-pagi-mobile"></div>
+              <div class="item-pagi-mobile"></div>
+              <div class="item-pagi-mobile"></div>
             </div>
           </div>
         </div>
 
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="promotion-main" id="promotion">
     <div class="container">
@@ -341,11 +422,120 @@
   <!-- Optional JavaScript -->
 
 
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/slick.js"></script>
 </body>
+
+
+<script>
+  var swiperExam = new Swiper(".slide-exam-mobile .swiper-exam", {
+    effect: "coverflow",
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 2,
+    initialSlide: 0,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 1,
+      depth: 580,
+      modifier: 1,
+      slideShadows: false,
+    },
+  });
+
+  const swiperM = new Swiper(".swiper", {
+    effect: "coverflow",
+    loop: true,
+    speed: 800,
+    centeredSlides: true,
+    slidesPerView: 1,
+    initialSlide: 0,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 30,
+      depth: 30,
+      modifier: 1,
+      slideShadows: false,
+    },
+  allowTouchMove: false,
+  });
+
+
+
+  var titleSlides = Array.from(document.querySelectorAll(".title-slide"));
+  var pagiSlides = Array.from(document.querySelectorAll(".item-pagi"));
+  var pagiSlidesMobile = Array.from(
+    document.querySelectorAll(".item-pagi-mobile")
+  );
+  titleSlides[swiperM.realIndex].classList.add("active");
+  pagiSlides[swiperM.realIndex].classList.add("active");
+  pagiSlidesMobile[swiperM.realIndex].classList.add("active");
+
+
+
+  titleSlides.forEach(function (titleSlide, index) {
+    titleSlide.addEventListener("click", function () {
+      titleSlides.forEach(function (slide) {
+        slide.classList.remove("active");
+      });
+      swiperM.slideToLoop(index);
+      titleSlide.classList.add("active");
+    });
+  });
+
+  pagiSlides.forEach(function (titleSlide, index) {
+    titleSlide.addEventListener("click", function () {
+      pagiSlides.forEach(function (slide) {
+        slide.classList.remove("active");
+      });
+      swiperM.slideToLoop(index);
+      titleSlide.classList.add("active");
+    });
+  });
+
+  pagiSlidesMobile.forEach(function (titleSlide, index) {
+    titleSlide.addEventListener("click", function () {
+      pagiSlidesMobile.forEach(function (slide) {
+        slide.classList.remove("active");
+      });
+      swiperExam.slideToLoop(index);
+      titleSlide.classList.add("active");
+    });
+  });
+
+  swiperM.on("slideChange", function () {
+    titleSlides.forEach(function (slide) {
+      slide.classList.remove("active");
+    });
+    pagiSlides.forEach(function (slide) {
+      slide.classList.remove("active");
+    });
+    var activeIndex = swiperM.realIndex;
+    if (activeIndex === titleSlides.length) {
+      activeIndex = 0;
+    }
+    if (activeIndex === pagiSlides.length) {
+      activeIndex = 0;
+    }
+    titleSlides[activeIndex].classList.add("active");
+    pagiSlides[activeIndex].classList.add("active");
+  });
+
+  swiperExam.on("slideChange", function () {
+    pagiSlidesMobile.forEach(function (slide) {
+      slide.classList.remove("active");
+    });
+    var activeIndex = swiperExam.realIndex;
+    if (activeIndex === pagiSlidesMobile.length) {
+      activeIndex = 0;
+    }
+    if (activeIndex === pagiSlidesMobile.length) {
+      activeIndex = 0;
+    }
+    pagiSlidesMobile[activeIndex].classList.add("active");
+  });
+</script>
 
 </html>

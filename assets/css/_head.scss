@@ -68,3 +68,28 @@ header {
         cursor: pointer;
     }
 }
+.dropdown{
+    display: none;
+    .dropdown-toggle:after{
+        display: none;
+        }
+        .dropdown-menu.show{
+            top: -48px !important;
+            left: 15px !important;
+            border-radius: 15px;
+        }
+        .dropdown-item {
+            font-size: 12px;
+            cursor: pointer;
+            &:hover{
+                background: linear-gradient(0deg, rgba(58,174,226,1) 0%, rgba(17,116,187,1) 50%);
+                color: white;
+            }
+            img{
+        
+                width: 15px;
+               margin-right: 5px;
+            }
+        }
+}
+

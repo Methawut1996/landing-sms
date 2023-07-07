@@ -1,17 +1,12 @@
 jQuery(document).ready(function ($) {
-  console.log(window.location.pathname);
-  var swiper = new Swiper(".my-Swiper", {
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    slidesPerView: 1,
+  var swiper1 = new Swiper(".my-Swiper", {
     spaceBetween: 400,
     loop: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 1,
+    // centeredSlides: true,
+    // slidesPerView: "auto",
   });
-
-  var swiper = new Swiper(".swiper-package", {
+  var swiper2 = new Swiper(".swiper-package", {
     pagination: {
       el: ".swiper-pagination",
     },
@@ -19,21 +14,20 @@ jQuery(document).ready(function ($) {
     loop: true,
     breakpoints: {
       0: {
-        slidesPerView: 2
+        slidesPerView: 2,
       },
       768: {
-        slidesPerView: 3
+        slidesPerView: 3,
       },
       1024: {
-        slidesPerView: 4
+        slidesPerView: 4,
       },
       1560: {
-        slidesPerView: 4
-      }
-    }
+        slidesPerView: 4,
+      },
+    },
   });
-
-  var swiper = new Swiper(".swiper-promotion", {
+  var swiper3 = new Swiper(".swiper-promotion", {
     pagination: {
       el: ".swiper-pagination",
     },
@@ -42,51 +36,47 @@ jQuery(document).ready(function ($) {
     loop: true,
     // centeredSlides: true,
     breakpoints: {
-      
       0: {
-        spaceBetween: 15,
-        slidesPerView: 3
+        slidesPerView: 2,
+      },
+      360: {
+        slidesPerView: 3,
       },
       768: {
-        slidesPerView: 4
+        slidesPerView: 4,
       },
       1024: {
-        slidesPerView: 4
+        slidesPerView: 4,
       },
       1560: {
-        slidesPerView: 4
-      }
-    }
+        slidesPerView: 4,
+      },
+    },
   });
-
-  $('.scrollTo').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
+  $(".scrollTo").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $($(this).attr("href")).offset().top,
+      },
+      500
+    );
     return false;
-});
-
+  });
   // Get the button
-  var btn = $('#button');
-
-  $(window).scroll(function() {
+  var btn = $("#button");
+  $(window).scroll(function () {
     if ($(window).scrollTop() > 300) {
-      btn.addClass('show');
+      btn.addClass("show");
     } else {
-      btn.removeClass('show');
+      btn.removeClass("show");
     }
   });
-  
-  btn.on('click', function(e) {
+  btn.on("click", function (e) {
     e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
+    $("html, body").animate({ scrollTop: 0 }, "300");
   });
-  
-  // $('.menu-mobile').click(function (e) {
-  //   e.stopPropagation();
-  //   $('.nav-mobile-box').toggleClass('active');
-  // });
-
+  $(".menu-mobile").click(function (e) {
+    e.stopPropagation();
+    $(".nav-mobile-box").toggleClass("active");
+  });
 });
-
-

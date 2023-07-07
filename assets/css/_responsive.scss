@@ -1,149 +1,346 @@
 @charset 'UTF-8';
 
-@media only screen and (min-width:768px) and (max-width:1200px) {
+@media only screen and (max-width: 1200px) {
+  .slider-wrapper-main .flex-slide-wrapp .item-caption-slide .title-blog-flex p {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .flex-slide-wrapp {
+    margin: -8rem 0;
+  }
+
+  .slider-wrapper-main .flex-slide-wrapp .item-caption-slide .title-blog-flex p {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .slider-wrapper-main .flex-slide-wrapp .item-caption-slide .title-blog-flex {
+    margin-left: 25px;
+    width: 90%;
+  }
+
+  .slider-wrapper-main .flex-slide-wrapp .item-caption-slide {
+    width: 55%;
+  }
+
+  .slider-wrapper-main .flex-slide-wrapp .item-slide-swiper {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .content-package {
+    h1 {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    .card-content-package {
+      margin: 1rem 0 !important;
+    }
+
+    .package-list-promotion {
+      img {
+        width: 18px !important;
+        margin-right: 10px !important;
+      }
+    }
+
+    .package-interesting {
+      img {
+        width: 20px !important;
+      }
+    }
+
+    .card-content-popular {
+      .package-head {
+        font-size: 16px !important;
+      }
+    }
+
+    .price-package {
+      font-size: 23px !important;
+    }
+
+    .button-buy-package {
+      font-size: 14px;
+      width: 120px !important;
+    }
+  }
+
+  .popup {
+    .socail-popup {
+      width: 45px;
+    }
+
+    .back-to-top {
+      width: 45px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .item-pc {
+    display: none;
+  }
+
+  .item-mobile {
+    display: block;
+  }
+
+  .head-example {
+    h2 {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 600px) {
+  .header-main {
+    padding: 0.5rem 15px !important;
+
+    .header-right {
+      display: none !important;
+    }
+
+    .header-left {
+      .icon-header {
+        width: 45px !important;
+      }
+
+      p {
+        margin: 0 0.25rem !important;
+        font-size: 10px;
+      }
+    }
+
+    .dropdown {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .popup {
+    .socail-popup {
+      width: 35px;
+      right: 5px;
+      z-index: 2;
+    }
+
+    .back-to-top {
+      display: none;
+    }
+  }
+
+  .content-banner {
+    margin: 4.5rem 0 1.2rem;
+  }
+
+  .package-main {
     .content-package {
-        h1 {
-            font-size: 1.7rem;
-        }
+      h1 {
+        font-size: 15px;
+      }
 
-        p {
-            font-size: 12px;
-        }
-        .card-content-package {
-            margin: 1rem 0 !important;
-        }
+      .package-head-title {
+        display: none;
+      }
 
-        .package-list-promotion {
-            img {
-                width: 18px !important;
-                margin-right: 10px !important;
-            }
-        }
-
-        .package-interesting {
-            img {
-                width: 20px !important;
-            }
-        }
-
-        .card-content-popular {
-            .package-head {
-                font-size: 16px !important;
-            }
-        }
-
-        .price-package {
-            font-size: 23px !important;
-        }
-        .button-buy-package{
-            font-size: 14px;
-            width: 120px !important;
-        }
+      P {
+        font-size: 10px;
+      }
     }
-    .popup{
-        .socail-popup{
-            width: 45px;
-           
-        }
-        .back-to-top {
-            width: 45px;
-            
-        }
+
+    .popular-package {
+      padding: 0 0rem 0.75rem !important;
     }
+  }
+
+  .card-content-package {
+    padding: 0.75rem !important;
+    margin: 0.5rem 0 !important;
+
+    hr {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .package-interesting {
+      padding: 0.3rem !important;
+
+      img {
+        width: 16px !important;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .card-content-popular {
+      padding: 0 0.5rem !important;
+    }
+
+    .package-head {
+      font-size: 13px !important;
+    }
+
+    .price-package {
+      font-size: 18px !important;
+    }
+
+    .package-list-promotion {
+      img {
+        margin-right: 5px !important;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .button-buy-package {
+      font-size: 12px;
+      width: 90px !important;
+    }
+  }
+
+  .promotion-main {
+    margin: 1rem;
+  }
+
+  footer {
+    p {
+      font-size: 10px;
+    }
+  }
 }
-@media only screen and  (max-width:600px) {
-    .header-main{
-        padding: 0.5rem 0.25rem !important;
-        .header-right{
-            display: none !important;
-        }
-        .header-left{
-            .icon-header{
-                width: 45px !important;
-            }
-            p{
-                margin: 0 0.25rem !important;
-                font-size: 10px;
-            }
-        }
-        .menu-mobile{
-            display: flex;
-            align-items: center;
-        }
+
+@media only screen and (max-width: 370px) {
+  .header-main {
+    padding: 0.5rem 0.25rem !important;
+
+    .header-right {
+      display: none !important;
     }
-    .popup{
-        .socail-popup{
-            width: 35px;
-            right: 5px;
-           
-        }
-        .back-to-top{
-            display: none;
-        }
+
+    .header-left {
+      .icon-header {
+        width: 45px !important;
+      }
+
+      p {
+        margin: 0 0.25rem !important;
+        font-size: 10px;
+      }
     }
-    .content-banner{
-        margin: 4.5rem 0 1.2rem;
+
+    .dropdown {
+      display: flex;
+      align-items: center;
     }
-    .package-main {
-        .content-package{
-            h1{
-                font-size: 15px;
-            }
-            .package-head-title{
-                display: none;
-            }
-            P{
-                font-size: 10px;
-            }
-        }
-        .popular-package{
-            padding: 0 0rem 0.75rem !important;
-        }
+  }
+
+  .popup {
+    .socail-popup {
+      width: 35px;
+      right: 5px;
     }
-    .card-content-package{
-        padding: 0.75rem !important;
-        margin: 0.5rem 0 !important;
-        hr {
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-        .package-interesting{
-            padding: 0.3rem !important;
-            img{
-                width: 16px !important;
-            }
-            p{
-                font-size: 10px;
-            }
-        }
-        .card-content-popular{
-            padding: 0 0.5rem !important;
-        }
-        .package-head{
-            font-size: 13px !important;
-        }
-        .price-package{
-            font-size: 18px !important;
-        }
-        .package-list-promotion{
-            img{
-                margin-right: 5px !important;
-            }
-            p{
-                font-size:10px ;
-            }
-        }
-.button-buy-package{
-    font-size: 12px;
-    width: 90px !important;
-}
+
+    .back-to-top {
+      display: none;
     }
-    .promotion-main{
-        margin: 1rem;
+  }
+
+  .content-banner {
+    margin: 4.5rem 0 1.2rem;
+  }
+
+  .package-main {
+    .content-package {
+      h1 {
+        font-size: 12px;
+        text-align: start;
+      }
+
+      .package-head-title {
+        display: none;
+      }
+
+      P {
+        font-size: 10px;
+      }
     }
-    footer{
-        p{
-            font-size: 10px;
-        }
-    }   
+
+    .popular-package {
+      padding: 0 0rem 0.75rem !important;
+    }
+  }
+
+  .card-content-package {
+    padding: 0.5rem !important;
+    margin: 0.5rem 0 !important;
+
+    hr {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .package-interesting {
+      padding: 0.3rem !important;
+
+      img {
+        width: 16px !important;
+      }
+
+      p {
+        font-size: 10px;
+      }
+    }
+
+    .card-content-popular {
+      padding: 0 0.5rem !important;
+    }
+
+    .package-head {
+      font-size: 11px !important;
+    }
+
+    .price-package {
+      font-size: 16px !important;
+    }
+
+    .package-list-promotion {
+      img {
+        width: 15px !important;
+        margin-right: 5px !important;
+        display: none;
+      }
+
+      p {
+        font-size: 9px !important;
+      }
+    }
+
+    .button-buy-package {
+      font-size: 10px;
+      width: 75px !important;
+    }
+  }
+
+  .promotion-main {
+    margin: 1rem;
+  }
+
+  footer {
+    p {
+      font-size: 10px;
+    }
+  }
 }
