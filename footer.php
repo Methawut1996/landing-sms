@@ -15,6 +15,9 @@
 
     <?php wp_footer(); ?>
 
+    <footer>
+    <p>Copyright 2023 SMSFLOW, All Right Reserved.</p>
+  </footer>
 
     </body>
 
